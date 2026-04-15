@@ -10,7 +10,6 @@ function App() {
   // 1. ADD TO CART LOGIC
   const addToCart = (product) => {
     setCartItems((prevItems) => {
-      // Check if the item is already in the cart
       const isItemInCart = prevItems.find((item) => item.id === product.id);
 
       if (isItemInCart) {
